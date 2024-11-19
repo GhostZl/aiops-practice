@@ -1,0 +1,13 @@
+apiVersion: redis.tencentcloud.crossplane.io/v1alpha1
+kind: Instance
+metadata:
+  name: example-redis
+spec:
+  forProvider:
+    availabilityZone: ap-hongkong-2
+    name: crossplane-test-redis
+    typeId: 8
+    memSize: 4096
+    noAuth: true
+    vpcId: "vpc-l4jpgf0c"
+    subnetId: "subnet-aqhf9tan"
